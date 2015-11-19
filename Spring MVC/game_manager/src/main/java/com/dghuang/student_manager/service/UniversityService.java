@@ -9,4 +9,9 @@ public interface UniversityService {
 	List<UniversityDTO> getUniversities();
 	
 	UniversityDTO createUniversity(UniversityDTO university);
+	
+	UniversityDTO modifyUniversity(UniversityDTO university);
+	
+	boolean deleteUniversity(String id);
+	
 }

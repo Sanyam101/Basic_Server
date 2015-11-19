@@ -30,9 +30,28 @@ public class UniversityServiceImpl implements UniversityService {
 		University university = universityRepository.findByName(universityDTO.getName());
 		if (university == null) {
 			university = new University(universityDTO);
+			university.setId(null);
 			return new UniversityDTO(universityRepository.save(university));
 		}
 		return null;
+	}
+	
+	public UniversityDTO modifyUniversity(UniversityDTO universityDTO) {
+		University university = universityRepository.findOne(universityDTO.getId());
+		if (university != null) {
+			university = new University(universityDTO);
+			return new UniversityDTO(universityRepository.save(university));
+		}
+		return null;
+	}
+	
+	public boolean deleteUniversity(String id) {
+		University university = universityRepository.findOne(id);
+		if (university != null) {
+			universityRepository.delete(id);
+			return true;
+		}
+		return false;
 	}
 
 }
