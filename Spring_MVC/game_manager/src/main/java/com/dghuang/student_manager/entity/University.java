@@ -1,3 +1,5 @@
+//Entity that defines university table in the postgreSQL database
+
 package com.dghuang.student_manager.entity;
 
 import java.util.ArrayList;

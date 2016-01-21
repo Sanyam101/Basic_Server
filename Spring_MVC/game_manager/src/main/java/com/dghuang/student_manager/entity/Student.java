@@ -1,3 +1,5 @@
+//Entity that defines student table in the postgreSQL database
+
 package com.dghuang.student_manager.entity;
 
 import javax.persistence.Column;

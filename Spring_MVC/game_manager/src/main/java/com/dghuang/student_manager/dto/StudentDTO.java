@@ -1,3 +1,5 @@
+//Data transfer object sent when requests to/from students are made
+
 package com.dghuang.student_manager.dto;
 
 import com.dghuang.student_manager.entity.Student;

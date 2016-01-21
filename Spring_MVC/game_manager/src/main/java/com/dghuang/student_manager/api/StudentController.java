@@ -1,3 +1,5 @@
+//Controller that handles requests to student endpoint
+
 package com.dghuang.student_manager.api;
 
 import java.util.List;

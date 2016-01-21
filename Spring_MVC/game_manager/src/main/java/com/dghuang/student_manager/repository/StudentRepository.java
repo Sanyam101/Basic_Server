@@ -1,3 +1,5 @@
+//Java object that can be used to interact directly with the student table in postgreSQL
+
 package com.dghuang.student_manager.repository;
 
 import org.springframework.data.repository.PagingAndSortingRepository;

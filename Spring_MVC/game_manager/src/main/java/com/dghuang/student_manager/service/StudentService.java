@@ -1,3 +1,5 @@
+//service that contains business logic for student manipulations
+
 package com.dghuang.student_manager.service;
 
 import java.util.List;
